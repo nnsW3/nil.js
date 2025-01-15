@@ -87,7 +87,7 @@ class BaseError extends Error {
       Version of the client: ${this.version}`;
     }
 
-    // This line is needed to make the instanceof operator work correctly with custom errors in TypeScript
+    // This line is needed to make the instance of operator work correctly with custom errors in TypeScript
     Object.setPrototypeOf(this, BaseError.prototype);
   }
 }
